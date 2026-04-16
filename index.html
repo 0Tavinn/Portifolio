@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Luiz Otávio" />
+  <meta name="keywords" content="desenvolvedor, python , c# , .net , react , typescript, salesforce, portfólio, recife, pernambuco" />
+  <meta name="author" content="Luiz Otávio" />
+  <meta property="og:title" content="Developer Portfolio" />
+  <meta property="og:description" content="Portfólio de Luiz Otávio — código com sabor de café." />
+  <meta property="og:type" content="website" />
+  <title>Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='90'></text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header id="navbar">
+    <div class="nav-logo">
+      <span>Tavinn</span>
+    </div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#courses">Cursos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-bg-doodles" aria-hidden="true">
+      <svg width="200" height="200" style="top:10%;left:5%">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="#6B3F1C" stroke-width="3" stroke-dasharray="12 8"/>
+      </svg>
+      <svg width="150" height="150" style="bottom:15%;right:8%">
+        <rect x="10" y="10" width="130" height="130" rx="20" fill="none" stroke="#C27A3A" stroke-width="3" stroke-dasharray="10 6"/>
+      </svg>
+      <svg width="120" height="120" style="top:30%;right:2%">
+        <polygon points="60,10 110,90 10,90" fill="none" stroke="#8B5E3C" stroke-width="2.5" stroke-dasharray="8 6"/>
+      </svg>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-label">Olá! Eu sou</p>
+        <h1 class="hero-title">Luiz Otávio<br/></h1>
+        <p class="hero-subtitle">
+          <span id="typed-role">Developer</span><span style="color:var(--caramel)">|</span>
+        </p>
+        <p class="hero-desc">
+          Desenvolvedor apaixonado por transformar ideias em código limpo e funcional.
+          Com uma xícara de café ao lado e boas práticas na mente, construo soluções e muito mais.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+          <a href="curriculo-luiz-otavio.pdf" download class="btn btn-outline">Baixar Currículo</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-illustration">
+          <div class="avatar-circle"></div>
+          <p class="hero-card-name">Luiz Otávio</p>
+          <p class="hero-card-role">~ 0Tavinn ~</p>
+          <div class="hero-card-badges">
+            <span class="badge">Python</span>
+            <span class="badge">C#</span>
+            <span class="badge">React</span>
+            <span class="badge">.NET</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Salesforce</span>
+          </div>
+        </div>
+        <span class="floating-sticker s1"></span>
+        <span class="floating-sticker s2"></span>
+        <span class="floating-sticker s3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label reveal">// sobre mim</span>
+        <h2 class="section-title reveal">Quem é o <em>0Tavinn</em>?</h2>
+        <div class="section-divider reveal"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>Olá! Sou <strong>Luiz Otávio</strong>, desenvolvedor. Tenho experiência sólida no desenvolvimento de aplicações web e sistemas empresariais, sempre buscando código elegante, de fácil manutenção e que resolva problemas reais.</p>
+          <p>Trabalho com ecossistemas <strong>Python</strong>, <strong>C# / .NET</strong> e <strong>React / TypeScript</strong>, além de automações e integrações em <strong>Salesforce</strong>. Gosto de aprender continuamente e transformar desafios complexos em soluções simples.</p>
+          <p>Desenvolvedor com forte viés de Produto, atuando na interseção entre engenharia, experiência do usuário e negócio. Experiência prática no desenvolvimento de aplicações web e simuladores educacionais, participando desde a análise do problema, definição de fluxo e requisitos, até a implementação técnica e ajustes baseados em uso real.</p>
+          <div class="coffee-quote">
+            <p>"Bom código é como um bom café — equilibrado, limpo e resolve tudo."</p>
+          </div>
+        </div>
+        <div class="about-info-cards reveal-right stagger-group">
+          <div class="info-card">
+            <div class="icon"></div>
+            <h4>Localização</h4>
+            <p>Recife, Pernambuco<br/>Brasil</p>
+          </div>
+          <div class="info-card">
+            <div class="icon"></div>
+            <h4>Disponibilidade</h4>
+            <p>Aberto a oportunidades CLT / PJ</p>
+          </div>
+          <div class="info-card">
+            <div class="icon"></div>
+            <h4>Formação</h4>
+            <p>Desenvolvimento de Sistemas &amp; TI</p>
+          </div>
+          <div class="info-card">
+            <div class="icon"></div>
+            <h4>Combustível</h4>
+            <p>Café coado + muita curiosidade</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label reveal">// tecnologias</span>
+        <h2 class="section-title reveal">Minhas <em>Skills</em></h2>
+        <div class="section-divider reveal"></div>
+      </div>
+      <div class="skills-grid stagger-group">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"></div>
+            <h3>Back-end</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Python</span>
+            <span class="skill-tag highlight">C#</span>
+            <span class="skill-tag highlight">.NET / ASP.NET</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Entity Framework</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"></div>
+            <h3>Front-end</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">React</span>
+            <span class="skill-tag highlight">TypeScript</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"></div>
+            <h3>CRM &amp; Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Salesforce</span>
+            <span class="skill-tag">Apex</span>
+            <span class="skill-tag">LWC</span>
+            <span class="skill-tag">SOQL</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">AWS (básico)</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"></div>
+            <h3>Banco de Dados</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"></div>
+            <h3>DevOps &amp; Ferramentas</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"></div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Comunicação clara</span>
+            <span class="skill-tag">Trabalho em equipe</span>
+            <span class="skill-tag">Metodologias Ágeis</span>
+            <span class="skill-tag">Resolução de problemas</span>
+            <span class="skill-tag">Aprendizado contínuo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label reveal">// repositórios</span>
+        <h2 class="section-title reveal">Projetos em <em>Destaque</em></h2>
+        <div class="section-divider reveal"></div>
+        <p class="reveal" style="color:var(--brown);margin-top:1rem;font-size:.95rem;">
+          Veja todos em
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener"
+             style="color:var(--caramel);font-weight:700;text-decoration:none;border-bottom:2px dashed var(--caramel);">
+            GitHub ↗
+          </a>
+        </p>
+      </div>
+      <div class="projects-grid stagger-group">
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"></div>
+            <div class="project-stars">Python</div>
+          </div>
+          <h3>Python Projects</h3>
+          <p>Coleção de scripts, automações e aplicações desenvolvidas em Python, incluindo manipulação de dados, APIs e bots.</p>
+          <div class="project-langs">
+            <span class="lang-badge py">Python</span>
+          </div>
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"></div>
+            <div class="project-stars">React</div>
+          </div>
+          <h3>React &amp; TypeScript App</h3>
+          <p>Aplicação front-end construída com React e TypeScript, focada em componentes reutilizáveis e tipagem estrita.</p>
+          <div class="project-langs">
+            <span class="lang-badge jsx">React</span>
+            <span class="lang-badge ts">TypeScript</span>
+          </div>
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"></div>
+            <div class="project-stars">.NET</div>
+          </div>
+          <h3>.NET / C# Solution</h3>
+          <p>API REST desenvolvida com ASP.NET Core e C#, seguindo padrões de arquitetura limpa e boas práticas SOLID.</p>
+          <div class="project-langs">
+            <span class="lang-badge cs">C#</span>
+            <span class="lang-badge net">.NET</span>
+          </div>
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"></div>
+            <div class="project-stars">Salesforce</div>
+          </div>
+          <h3>Salesforce Integration</h3>
+          <p>Projeto de integração e customização Salesforce utilizando Apex, LWC e SOQL para automação de processos empresariais.</p>
+          <div class="project-langs">
+            <span class="lang-badge sf">Salesforce</span>
+            <span class="lang-badge js">Apex</span>
+          </div>
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"></div>
+            <div class="project-stars">Full Stack</div>
+          </div>
+          <h3>Full Stack Web App</h3>
+          <p>Aplicação completa com front-end em React e back-end em Python/Django, com autenticação e banco de dados relacional.</p>
+          <div class="project-langs">
+            <span class="lang-badge py">Python</span>
+            <span class="lang-badge jsx">React</span>
+            <span class="lang-badge ts">TypeScript</span>
+          </div>
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"></div>
+            <div class="project-stars">Side Project</div>
+          </div>
+          <h3>Side Projects &amp; Estudos</h3>
+          <p>Repositório de experimentos, estudos de caso e projetos pessoais desenvolvidos durante a jornada de aprendizado contínuo.</p>
+          <div class="project-langs">
+            <span class="lang-badge py">Python</span>
+            <span class="lang-badge js">JavaScript</span>
+            <span class="lang-badge cs">C#</span>
+          </div>
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label reveal">// aprendizado contínuo</span>
+        <h2 class="section-title reveal">Cursos &amp; <em>Certificações</em></h2>
+        <div class="section-divider reveal"></div>
+        <p class="reveal" style="color:var(--brown);margin-top:1rem;font-size:.95rem;">
+          Formações disponíveis no
+          <a href="https://www.linkedin.com/in/luiz-otávio-745538270/" target="_blank" rel="noopener"
+             style="color:var(--caramel);font-weight:700;text-decoration:none;border-bottom:2px dashed var(--caramel);">
+            LinkedIn ↗
+          </a>
+        </p>
+      </div>
+      <div class="courses-grid stagger-group">
+        <div class="course-card">
+          <span class="course-platform">Udemy</span>
+          <h4>Python para Desenvolvimento Web e APIs</h4>
+          <p>Django, Flask, FastAPI — construção de APIs RESTful e automações com Python.</p>
+          <span class="course-tag">Python</span>
+        </div>
+        <div class="course-card">
+          <span class="course-platform">Alura</span>
+          <h4>React &amp; TypeScript: Front-end Moderno</h4>
+          <p>Componentização, hooks, context API, TypeScript e boas práticas de front-end.</p>
+          <span class="course-tag">React · TS</span>
+        </div>
+        <div class="course-card">
+          <span class="course-platform">Microsoft Learn</span>
+          <h4>Desenvolvimento com C# e .NET</h4>
+          <p>ASP.NET Core, Entity Framework, Web APIs e arquitetura de software com C#.</p>
+          <span class="course-tag">C# · .NET</span>
+        </div>
+        <div class="course-card">
+          <span class="course-platform">Trailhead (Salesforce)</span>
+          <h4>Salesforce Developer Fundamentals</h4>
+          <p>Apex, SOQL, Lightning Web Components (LWC) e administração da plataforma Salesforce.</p>
+          <span class="course-tag">Salesforce</span>
+        </div>
+        <div class="course-card">
+          <span class="course-platform">DIO / Bootcamp</span>
+          <h4>Bootcamp Full Stack Developer</h4>
+          <p>Desenvolvimento full stack com foco em JavaScript, Node.js, React e boas práticas ágeis.</p>
+          <span class="course-tag">Full Stack</span>
+        </div>
+        <div class="course-card">
+          <span class="course-platform">Udemy</span>
+          <h4>Git, GitHub e Metodologias Ágeis</h4>
+          <p>Controle de versão com Git, fluxo de trabalho colaborativo, Scrum e Kanban no dia a dia.</p>
+          <span class="course-tag">DevOps</span>
+        </div>
+        <div class="course-card">
+          <span class="course-platform">Coursera / Google</span>
+          <h4>Fundamentos de Cloud Computing</h4>
+          <p>Conceitos de nuvem, Azure, AWS e infraestrutura como serviço para desenvolvedores.</p>
+          <span class="course-tag">Cloud</span>
+        </div>
+        <div class="course-card">
+          <span class="course-platform">Origamid</span>
+          <h4>CSS Avançado &amp; Design de Interfaces</h4>
+          <p>Flexbox, Grid, animações CSS e design responsivo com foco na experiência do usuário.</p>
+          <span class="course-tag">Front-end</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <div class="section-header" style="text-align:left">
+          <span class="section-label reveal">// vamos conversar?</span>
+          <h2 class="section-title reveal">Entre em <em>Contato</em></h2>
+          <div class="section-divider reveal" style="margin:1rem 0 0"></div>
+        </div>
+        <p style="margin-top:1.8rem" class="reveal">
+          Estou aberto a novas oportunidades, projetos freelance ou apenas uma boa
+          conversa sobre tecnologia (e café). Vamos conversar!
+        </p>
+        <div class="contact-links stagger-group">
+          <a href="mailto:luizota32@gmail.com" class="contact-link-item">
+            <div class="contact-link-icon"></div>
+            <div class="contact-link-text">
+              <strong>E-mail</strong>
+              <span>luizota32@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/0Tavinn" target="_blank" rel="noopener" class="contact-link-item">
+            <div class="contact-link-icon"></div>
+            <div class="contact-link-text">
+              <strong>GitHub</strong>
+              <span>github.com/0Tavinn</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/luiz-otávio-745538270/" target="_blank" rel="noopener" class="contact-link-item">
+            <div class="contact-link-icon"></div>
+            <div class="contact-link-text">
+              <strong>LinkedIn</strong>
+              <span>Luiz Otávio</span>
+            </div>
+          </a>
+          <a href="curriculo-luiz-otavio.pdf" download class="contact-link-item">
+            <div class="contact-link-icon"></div>
+            <div class="contact-link-text">
+              <strong>Currículo</strong>
+              <span>Baixar PDF</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card reveal-right">
+        <div class="coffee-big" id="coffee-egg" style="cursor:pointer;user-select:none;" title="Clique para um café!"></div>
+        <h3>Vamos tomar um café?</h3>
+        <p>Seja para discutir um projeto, uma vaga ou trocar uma ideia — fico feliz em conversar. A melhor conversa começa com um bom café!</p>
+        <a href="mailto:luizota32@gmail.com" class="btn btn-primary">Enviar mensagem</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <a href="https://github.com/0Tavinn" target="_blank" rel="noopener"><span>0Tavinn</span></a>
+      · Luiz Otávio · 2025
+    </p>
+    <p style="margin-top:.4rem;font-size:.8rem;opacity:.6;">
+      Python · C# · .NET · React · TypeScript · Salesforce
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

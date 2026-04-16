@@ -808,9 +808,31 @@ footer a { color: var(--caramel); text-decoration: none; }
 /* =============================================
    ANIMATIONS (GSAP targets)
    ============================================= */
-.reveal { opacity: 0; transform: translateY(30px); }
-.reveal-left { opacity: 0; transform: translateX(-40px); }
-.reveal-right { opacity: 0; transform: translateX(40px); }
+.reveal { 
+  opacity: 0; 
+  transform: translateY(30px); 
+  animation: reveal-fallback 0.8s ease-out 0.5s forwards;
+}
+.reveal-left { 
+  opacity: 0; 
+  transform: translateX(-40px); 
+  animation: reveal-left-fallback 0.8s ease-out 0.5s forwards;
+}
+.reveal-right { 
+  opacity: 0; 
+  transform: translateX(40px); 
+  animation: reveal-right-fallback 0.8s ease-out 0.5s forwards;
+}
+
+@keyframes reveal-fallback {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes reveal-left-fallback {
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes reveal-right-fallback {
+  to { opacity: 1; transform: translateX(0); }
+}
 
 /* =============================================
    TABLET

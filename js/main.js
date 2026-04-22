@@ -1,8 +1,3 @@
-/* =============================================
-   0Tavinn Portfolio — main.js
-   GSAP + ScrollTrigger animations
-   ============================================= */
-
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Mobile hamburger ---- */

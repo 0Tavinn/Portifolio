@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Caveat:wght@400;600;700&display=swap');
 
-/* ---- CSS Variables ---- */
+/* ---- CSS ---- */
 :root {
   --cream:      #F5EDD6;
   --beige:      #E8D5B0;
@@ -42,7 +42,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ---- Grain texture overlay ---- */
+/* ---- texture overlay ---- */
 body::before {
   content: '';
   position: fixed;
@@ -57,9 +57,7 @@ body::before {
 ::-webkit-scrollbar-track { background: var(--beige); }
 ::-webkit-scrollbar-thumb { background: var(--coffee); border-radius: 4px; }
 
-/* =============================================
-   NAVBAR
-   ============================================= */
+/* NAVBAR */
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -130,9 +128,7 @@ nav ul a.active::after { width: 100%; }
   transition: .3s;
 }
 
-/* =============================================
-   HERO SECTION
-   ============================================= */
+/* HERO SECTION */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -144,7 +140,7 @@ nav ul a.active::after { width: 100%; }
   background: var(--warm-white);
 }
 
-/* Decorative background doodles */
+/* Decorative background */
 .hero-bg-doodles {
   position: absolute;
   inset: 0;
@@ -351,9 +347,7 @@ nav ul a.active::after { width: 100%; }
   50%      { transform: rotate(5deg) translateY(-8px); }
 }
 
-/* =============================================
-   SECTION BASE
-   ============================================= */
+/* SECTION BASE */
 section {
   padding: 5rem 2rem;
   position: relative;
@@ -394,9 +388,7 @@ section {
   margin: 1rem auto 0;
 }
 
-/* =============================================
-   ABOUT SECTION
-   ============================================= */
+/* ABOUT SECTION */
 #about {
   background: var(--beige);
   border-top: 3px solid var(--light-tan);
@@ -466,9 +458,7 @@ section {
   color: var(--coffee);
 }
 
-/* =============================================
-   EXPERIENCE SECTION
-   ============================================= */
+/* EXPERIENCE SECTION */
 #experience {
   background: var(--cream);
   border-top: 3px solid var(--light-tan);
@@ -594,9 +584,7 @@ section {
   letter-spacing: 0.3px;
 }
 
-/* =============================================
-   SKILLS SECTION
-   ============================================= */
+/* SKILLS SECTION */
 #skills { background: var(--warm-white); }
 
 .skills-grid {
@@ -668,9 +656,7 @@ section {
   color: var(--cream);
 }
 
-/* =============================================
-   PROJECTS SECTION
-   ============================================= */
+/* PROJECTS SECTION */
 #projects { background: var(--beige); }
 
 .projects-grid {
@@ -774,9 +760,7 @@ section {
 }
 .project-link:hover { color: var(--caramel); border-color: var(--caramel); }
 
-/* =============================================
-   COURSES / CERTIFICATIONS
-   ============================================= */
+/* COURSES / CERTIFICATIONS */
 #courses { background: var(--warm-white); }
 
 .courses-grid {
@@ -832,9 +816,7 @@ section {
   border: 2px solid var(--dark-brown);
 }
 
-/* =============================================
-   CONTACT SECTION
-   ============================================= */
+/* CONTACT SECTION */
 #contact {
   background: var(--dark-brown);
   color: var(--cream);
@@ -931,9 +913,7 @@ section {
   margin-bottom: 1.5rem;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
+/* FOOTER */
 footer {
   background: var(--ink);
   color: var(--light-tan);
@@ -945,9 +925,7 @@ footer {
 footer span { color: var(--caramel); }
 footer a { color: var(--caramel); text-decoration: none; }
 
-/* =============================================
-   ANIMATIONS (GSAP targets)
-   ============================================= */
+/* ANIMATIONS (GSAP) */
 .reveal { 
   opacity: 0; 
   transform: translateY(30px); 
@@ -974,9 +952,7 @@ footer a { color: var(--caramel); text-decoration: none; }
   to { opacity: 1; transform: translateX(0); }
 }
 
-/* =============================================
-   TABLET
-   ============================================= */
+/* TABLET */
 @media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -987,9 +963,7 @@ footer a { color: var(--caramel); text-decoration: none; }
   }
 }
 
-/* =============================================
-   MOBILE
-   ============================================= */
+/* MOBILE */
 @media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; }
   .hero-visual { order: -1; }

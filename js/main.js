@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---- Active nav link on scroll ---- */
+  /* ---- Active nav  ---- */
   const sections = document.querySelectorAll('section[id]');
   const navLinks  = document.querySelectorAll('nav ul a');
   const observer  = new IntersectionObserver(entries => {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.35 });
   sections.forEach(s => observer.observe(s));
 
-  /* ---- Typed text effect in hero ---- */
+  /* ---- Typed text ---- */
   const roles = [
     'Full Stack',
     'Python',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   typeLoop();
 
-  /* ---- GSAP Animations ---- */
+  /* ---- GSAP ---- */
   if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .from('.hero-card-illustration', { opacity: 0, x: 50, duration: .8 }, '-=.6')
       .from('.floating-sticker', { opacity: 0, scale: 0, stagger: .15, duration: .5 }, '-=.4');
 
-    /* Generic scroll reveals */
+    /* scroll reveals */
     gsap.utils.toArray('.reveal').forEach(el => {
       gsap.from(el, {
         opacity: 0, y: 40, duration: .7, ease: 'power2.out',
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    /* Staggered card animations */
+    /* card animations */
     gsap.utils.toArray('.stagger-group').forEach(group => {
       const cards = group.querySelectorAll(':scope > *');
       gsap.from(cards, {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    /* Skills tag bounce */
+    /* Skills */
     gsap.utils.toArray('.skill-tag').forEach((tag, i) => {
       gsap.from(tag, {
         opacity: 0, scale: .7, duration: .4, ease: 'back.out(1.7)',
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    /* Navbar scroll shrink */
+    /* Navbar */
     ScrollTrigger.create({
       start: 'top -60',
       onUpdate: self => {
@@ -125,14 +125,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   } else {
-    /* Fallback without GSAP: just show everything */
+    /* Fallback */
     document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => {
       el.style.opacity = 1;
       el.style.transform = 'none';
     });
   }
 
-  /* ---- Coffee cup Easter egg ---- */
+  /* ---- Coffee Easter egg ---- */
   let clickCount = 0;
   const coffeeBtn = document.getElementById('coffee-egg');
   if (coffeeBtn) {
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2800);
   }
 
-  /* ---- Smooth scroll for nav anchors ---- */
+  /* ---- scroll for nav  ---- */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const target = document.querySelector(a.getAttribute('href'));
